@@ -90,11 +90,9 @@ The following code is written in SAS.  The files and their descriptions include:
     <b>DataGeneration.sas</b>: This code will simulate data for our analysis.  DataGeneration.sas will use a data step to map the relationships between the dependent variable, independent variables, and random effects using a regression formula. 
   </li>
   <li>
-    <b>DataValidation</b>: The code will validateour simulation is valid against our desired model..
+    <b>DataValidation.sas</b>: The code will validate our simulation against our model.  This code is not needed for MMM process.  It is just a sanity check.
   </li>
 </ul>
-
-
 <!--(  
 In this example we will build non-linear mixed models. 
 Optimization requires a conversion amount
