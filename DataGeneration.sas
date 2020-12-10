@@ -11,7 +11,8 @@ DATA MixedData;
 
       /*Simulate 20,000 observation, 5,000 for each geograph*/
       DO i=1 to 5000;
-	    /*Define Fixed Effects and Epsilon. Since marketing campaigns are never 0, we are taxking a max value of our output or 0*/
+        Date=i+21000;
+        /*Define Fixed Effects and Epsilon. Since marketing campaigns are never 0, we are taxking a max value of our output or 0*/
         x1=max(rand('Normal',7.5,1.2),0);
         x2=max(rand('Normal',12.2,1.1),0);
         x3=max(rand('Normal',8.1,1.2),0);
