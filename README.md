@@ -90,6 +90,14 @@ The following code is written in SAS.  The files and their descriptions include:
     <b>DataGeneration.sas</b>: This code will simulate data for our analysis.  DataGeneration.sas will use a data step to map the relationships between the dependent variable, independent variables, and random effects using a regression formula. To varify our fixed effects match, you will need to run a bootstrap across several samples.
   </li>
 </ul>
+
+## To Do
+<ol>
+  <li>Fix the simulation of the random effects for a multiplicative model</li>
+  <li>I show how to do adstock and lag analysis, but I did not build in signifigacnt variables.  I need to add that</li>
+</ol>
+  
+
 <!--(  
 In this example we will build non-linear mixed models. 
 Optimization requires a conversion amount
