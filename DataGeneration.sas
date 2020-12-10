@@ -13,10 +13,10 @@ DATA MixedData;
       DO i=1 to 5000;
 	    /*Define Fixed Effects and Epsilon. Since marketing campaigns are never 0, we are taxking a max value of our output or 0*/
         x1=max(rand('Normal',7.5,1.2),0);
-        x2=max(rand('Normal',6.2,1.1),0);
-        x3=max(rand('Normal',8.1,3.2),0);
-        x4=max(rand('Normal',6.3,.9),0);
-        x5=max(rand('Normal',10.5,3),0);
+        x2=max(rand('Normal',12.2,1.1),0);
+        x3=max(rand('Normal',8.1,1.2),0);
+        x4=max(rand('Normal',9.3,.9),0);
+        x5=max(rand('Normal',10.5,1),0);
         Epsilon=rand('Normal',0,.05);
 
         /*Create y for each observation.  The value of y is also dependent on our variance factors*/
