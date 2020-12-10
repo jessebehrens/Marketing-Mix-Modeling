@@ -20,7 +20,7 @@ DATA MixedData;
         Epsilon=rand('Normal',0,.05);
 
         /*Create y for each observation.  The value of y is also dependent on our variance factors*/
-        y=3.6 + x1*0.15 + 0.2*x2 + 0.05*x3 + 0.09*x4 + Epsilon + Geo_rand; 
+        y=10.7 + x1*0.15 + 0.2*x2 + 0.05*x3 + 0.09*x4 + Epsilon + Geo_rand; 
 	    Region=Geo;        
         output;
       END;
