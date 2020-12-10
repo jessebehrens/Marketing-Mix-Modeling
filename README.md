@@ -87,10 +87,7 @@ There are several best practices to be considered when fitting MMM models.  They
 The following code is written in SAS.  The files and their descriptions include:
 <ul>
   <li>
-    <b>DataGeneration.sas</b>: This code will simulate data for our analysis.  DataGeneration.sas will use a data step to map the relationships between the dependent variable, independent variables, and random effects using a regression formula. 
-  </li>
-  <li>
-    <b>DataValidation.sas</b>: The code will validate our simulation against our model.  This code is not needed for MMM process.  It is just a sanity check.
+    <b>DataGeneration.sas</b>: This code will simulate data for our analysis.  DataGeneration.sas will use a data step to map the relationships between the dependent variable, independent variables, and random effects using a regression formula. To varify our fixed effects match, you will need to run a bootstrap across several samples.
   </li>
 </ul>
 <!--(  
