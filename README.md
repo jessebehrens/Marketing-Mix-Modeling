@@ -84,8 +84,16 @@ There are several best practices to be considered when fitting MMM models.  They
   <li>Lastly, the values of independent variables should fall within the range that the model was fit on.  Any ranges outside of these are extrapolating and invalidate the model.</li></ul>
 
 ## Code Flow
-The following code is written in SAS.  The files and their descriptions include:<br>
-<b>DataGeneration.sas</b>: This code will simulate data for our analysis.  The code will be broken into two sections. The first section will use a data step to map the relationships between the dependent variable, independent variables, and random effects using a regression formula.  The second section will demonstrate that our simulated data does in fact, match our simulated data.  
+The following code is written in SAS.  The files and their descriptions include:
+<ul>
+  <li>
+    <b>DataGeneration.sas</b>: This code will simulate data for our analysis.  DataGeneration.sas will use a data step to map the relationships between the dependent variable, independent variables, and random effects using a regression formula. 
+  </li>
+  <li>
+    <b>DataValidation</b>: The code will validateour simulation is valid against our desired model..
+  </li>
+</ul>
+
 
 <!--(  
 In this example we will build non-linear mixed models. 
