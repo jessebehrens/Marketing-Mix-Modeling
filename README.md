@@ -91,7 +91,10 @@ The following code is written in SAS. The files are placed in the order they sho
   </li>
   <li>
     <b>AdStock.sas</b>: A specific campaign is likely to distribute its effects and awareness of multiple time periods. That is, campaigns don't have their full effect for a specific time period, they decay over multipe time periods.  Therefore, we will apply a 'retention rate' to each variable and carry over some of the effect to the next period.  That is The model will select the best variable and surface the true decay rate of a variable.  In the code, a nine different levels of retention rate are added.  I have included Adstock.xslx in this repo for you to play around and understand the concept.
-    </li>
+  </li>
+  <li>
+    <b>lag.sas</b>: While adstock measures how a campaign decays over time, lags measure when the campain begins to have its effectiveness.  Lag.sas adds a lag value to each input value.  The user specifies the relevant predictors, and the code will add N number of lags where N is user specified.
+  </li>  
     
     
     
