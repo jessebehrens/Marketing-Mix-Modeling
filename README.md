@@ -95,6 +95,7 @@ The following code is written in SAS. The files are placed in the order they sho
   <li>
     <b>Lag.sas</b>: While adstock measures how a campaign decays over time, lags measure when the campaign begins to have its effectiveness.  Lag.sas adds a lag value to each input value.  The user specifies the relevant predictors, and the code will add N number of lags where N is user specified.
   </li>  
+  <li><b>Log.sas</b>: The log transformation can be applied now that lags and adstocks have been added.  This will give us our multiplicative model.</li>
     
     
     
@@ -109,25 +110,16 @@ The following code is written in SAS. The files are placed in the order they sho
   
 
 <!--(  
-In this example we will build non-linear mixed models. 
-Optimization requires a conversion amount
-Minimum 2 years data.  Granular data any level – role up to the business decision and geography.  Some may have to role down such as moving average etc.  If no needs to be 0.
--->
 Notes
 Base sales
 non-linear variables
 Variable creatation data cleanup
-adstock analysis
 model build
 multicollineraity check
 Optimization
-Non-linear model -elasticity
 Inferentials Statics
-
 Model is built many many many times, final model is picked based on a number of factors
 #Future STeps - could rsubmit for faster results.
-
-
-</ul>
+-->
 
 
