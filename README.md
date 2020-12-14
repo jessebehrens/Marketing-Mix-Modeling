@@ -96,6 +96,8 @@ The following code is written in SAS. The files are placed in the order they sho
     <b>Lag.sas</b>: While adstock measures how a campaign decays over time, lags measure when the campaign begins to have its effectiveness.  Lag.sas adds a lag value to each input value.  The user specifies the relevant predictors, and the code will add N number of lags where N is user specified.
   </li>  
   <li><b>Log.sas</b>: The log transformation can be applied now that lags and adstocks have been added.  This will give us our multiplicative model.</li>
+  <li><b>ModelCombinations.sas</b></li>: The next goal is to calculate all the combinations of variables from each variable group.  Each combination will feed into a single model.
+  </li>
     
     
     
