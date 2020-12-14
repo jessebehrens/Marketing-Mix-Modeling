@@ -6,7 +6,7 @@ Marketing Mix Modeling (MMM) is a statistical technique for measuring the mix of
   <li>Exploratory Data Analysis such as checking for outliers, missing data, correlations, and general correctness of data</li>
   <li>Deriving new independent variables</li> 
   <li>Transforming input variables such as applying lags, log, and advertising adstock. The lags provide the time element.  The advertising adstock provides the rate of decay of a marketing campaign.  That is, marketing campaigns distribute their effects over different periods of time.</li>
-  <li>Fit linear mixed models to estimate and measure the impact of marketing campaigns.</li>
+  <li>Fit a large amount of linear mixed models to estimate and measure the impact of marketing campaigns.</li>
   <li>Perform variable selection and minimize multicollinearity</li>
   <li>Find the optimal mix of input parameters for the selected model</li>
   <li>Receiving feedback from the business</li>
