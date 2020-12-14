@@ -106,6 +106,7 @@ The following code is written in SAS. The files are placed in the order they sho
 <ol>
   <li>Fix the simulation of the random effects for a multiplicative model</li>
   <li>I show how to do adstock and lag analysis, but I did not build them in as signifigacnt variables.  I will adjust the model accordingly at a later time</li>
+  <li>Puslibh the code that shows how each variable contributes to the outcome of desire</li>.
 </ol>
   
 
