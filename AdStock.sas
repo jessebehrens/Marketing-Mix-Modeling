@@ -22,8 +22,8 @@ variable length as needed.
 /*Load the variables to be ad-stocked into a macro variable using
   '|' as a deliminter.*/
 PROC SQL noprint;
-  select &varlist_var into :varlist separated by '|';         
-  from &varlist_dsn
+  select &varlist_var into :varlist separated by '|'         
+  from &varlist_dsn;
 QUIT;
 
 /*Sort the data for by group processing*/
