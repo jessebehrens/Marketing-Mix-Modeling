@@ -22,7 +22,7 @@ variable length as needed.
 /*Load the variables to be ad-stocked into a macro variable using
   '|' as a deliminter.*/
 PROC SQL noprint;
-  select &varlist_var into :varlist separated by '|'         
+  select &varlist_var into :varlist separated by '|';         
   from &varlist_dsn
 QUIT;
 
@@ -96,4 +96,4 @@ RUN;
          dsout=Mixed_Data_ADSTOCK, 
          varlist_dsn=varlist_dsn, 
          varlist_var=varlist, 
-         by_var=Geo Date)
+         by_var=Geo Date);
