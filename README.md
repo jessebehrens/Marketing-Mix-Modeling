@@ -96,13 +96,22 @@ The following code is written in SAS. The files are placed in the order they sho
     <b>Lag.sas</b>: While adstock measures how a campaign decays over time, lags measure when the campaign begins to have its effectiveness.  Lag.sas adds a lag value to each input value.  The user specifies the relevant predictors, and the code will add N number of lags where N is user specified.
   </li>  
   <li><b>Log.sas</b>: The log transformation can be applied now that lags and adstocks have been added.  This will give us our multiplicative model.</li>
-  <li><b>ModelCombinations.sas</b></li>: The next goal is to calculate all the combinations of variables from each variable group.  Each combination will feed into a single model.
+  <li><b>ModelCombinations.sas</b>: The next goal is to calculate all the combinations of variables from each variable group.  Each combination will feed into a single model.
   </li>
-    
-    
-    
-    
-</ul>
+  <li><b>ModelBuild.sas</b>: This code will fit a model for every combination of input parameters carried over from ModelCombinations.sas code. <b>WARNING</b>: Do not run every possible combination to start the process.  Start with a subset and build intution as to which variables are likely to have no impact on your model.  Otherwise, your machine will never finish every possible model!</b>.  The mode output table produces the following statistics:
+  <ul>
+  <li> <b>Low_VIF_Count and High_VIF_Count</b>:The number of variables that have a low VIF (<10), and the number of variables with a high VIF (>=10).  High VIF scores indicate multicollinearity and the coefficents are incorrect.</li>
+  <li><b>N</b>: The number of observations used to build the model</li>
+  <li><b>Mape</b>: The mean absolute percentage error, MAPE, which provides a prediction accuracy.  Mape is calculated as 
+    <p align='center'>
+<img src="https://render.githubusercontent.com/render/math?math=Mape={\frac{100}{n}}{\sum_{i=1}^n}|{\frac{Y_n-Prediction_n}{Y_N}}|" />
+</p></li>
+  <li><b>Probt_Sig_count</b>: The number of variables that are signifigant with a p-value<0.05</li>
+  <li><b>Prob_NonSig_count</b>: The number of variables that are insignifigant with a p-value > 0.05</li>
+  <li><b>:Estimate_Pos_Count</b>:  The number of variables that a have a positive coefficent.  Does it make sense that spending more money on a campaign returns less money?</li>
+  li><b>:Estimate_Neg_Count</b>:  The number of variables that a have a negative coefficent.  Does it make sense that spending more money on a campaign returns less money?</li>
+  </ul>  
+  </ul>
 
 ## To Do
 <ol>
