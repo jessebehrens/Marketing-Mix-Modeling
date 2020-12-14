@@ -85,7 +85,7 @@ RUN;
 
 /*Delete intermediate datasets*/
 PROC DATASETS lib=work nodetails nolist nowarn;
-  delete Mixed_Data_ADSTOCK_DMA_ADSTOCK;
+  delete Mixed_Data_ADSTOCK varlist_dsn;
 QUIT;
 
 
