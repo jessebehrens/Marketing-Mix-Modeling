@@ -98,7 +98,7 @@ The following code is written in SAS. The files are placed in the order they sho
   <li><b>Log.sas</b>: The log transformation can be applied now that lags and adstocks have been added.  This will give us our multiplicative model.</li>
   <li><b>ModelCombinations.sas</b>: The next goal is to calculate all the combinations of variables from each variable group.  Each combination will feed into a single model.
   </li>
-  <li><b>ModelBuild.sas</b>: This code will fit a model for every input parameter combination carried over from ModelCombinations.sas code. <b>WARNING</b>: Do not run every possible combination to start the process.  Start with a subset and build intuition as to which variables are likely to have no impact on your model.  Otherwise, your machine will never finish every possible model!</b>.  The mode output table produces the following statistics:
+  <li><b>ModelBuild.sas</b>: This code will fit a model for every input parameter combination carried over from ModelCombinations.sas code. <b>WARNING</b>: Do not run every possible combination to start the process.  Start with a subset and build intuition as to which variables are likely to have no impact on your model.  Pull the variables out that aren't impacting, and narrow down your set of variables to test.  Otherwise, your machine will never finish every possible model!</b>.  The mode output table produces the following statistics:
   <ul>
   <li> <b>Low_VIF_Count and High_VIF_Count</b>: The number of variables that have a low VIF (<10) and the number of variables with a high VIF (>=10).  High VIF scores indicate multicollinearity, and the coefficients are incorrect.</li>
   <li><b>N</b>: The number of observations used to build the model</li>
