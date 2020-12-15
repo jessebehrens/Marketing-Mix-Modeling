@@ -110,12 +110,13 @@ The following code is written in SAS. The files are placed in the order they sho
   <li><b>Prob_NonSig_count</b>: The number of variables that are insignifigant with a p-value > 0.05</li>
   <li><b>Estimate_Pos_Count</b>:  The number of variables that have a positive coefficient.  Does it make sense that spending more money on a campaign returns less money?</li>
   <li><b>Estimate_Neg_Count</b>:  The number of variables that have a negative coefficient.  Does it make sense that spending more money on a campaign returns less money?</li>
-  </ul>  
+  </ul> 
+  <li><b>Optimization.sas</b>: This code will take the parameters from your selected model in ModelBuild.sas and provide the optimial trade off.  You will need to manually enter in your parameters</li>
   </ul>
 
 ## To Do
 <ol>
-  <li>Fix the simulation of the random effects for a multiplicative model</li>
+  <li>Improve the simulation of the random effects for a multiplicative model</li>
   <li>I show how to do adstock and lag analysis, but I did not build them in as signifigacnt variables.  I will adjust the model accordingly at a later time</li>
   <li>Puslibh the code that shows how each variable contributes to the outcome of desire</li>.
 </ol>
