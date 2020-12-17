@@ -119,7 +119,7 @@ The following code is written in SAS. The files are placed in the order they sho
   <li>Improve the simulation of the random effects for a multiplicative model</li>
   <li>I show how to do adstock and lag analysis, but I did not build them in as signifigacnt variables.  I will adjust the model accordingly at a later time</li>
   <li>Puslibh the code that shows how each variable contributes to the outcome of desire</li>.
-  <li>Add a rsubmit example to demonstrate how to speed up with <a href='https://statmike.com/blog/toc#parallelization'parallelization</a>
+  <li>Add a rsubmit example to demonstrate how to speed up with <a href='https://statmike.com/blog/toc#parallelization'>parallelization</a></li>
 </ol>
   
 
